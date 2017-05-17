@@ -31,7 +31,10 @@ export default class Observer {
                 if (val === newVal) return
                 console.log('监听到值变化了 ', val, ' --> ', newVal)
                 val = newVal
-                dep.notify(newVal)
+
+                // dep.notify(newVal)
+                dep.target.val = newVal
+                dep.notify()
             }
         })
     }

@@ -9,12 +9,12 @@ export default () => {
     }
 
     new Observer(data)
-    new Render(data)
-        // 这部分实现
 
     // document.querySelector('[name="name"]').innerHTML = data.name
     // document.querySelector('[name="level"]').innerHTML = data.level
     // document.querySelector('[name="knowledge"]').innerHTML = data.knowledge
+    // 这部分实现
+    new Render(data)
 
     setTimeout(() => {
         data.name = '中级菜鸟'
@@ -34,11 +34,7 @@ export default () => {
 
     setTimeout(() => {
         data.knowledge = 'Angular, React, Vue'
-    }, 4000)
-
-    // setTimeout(() => {
-    //     data.firstName = data.name
-    // }, 3000)
+    }, 5000)
 
     return data
 }

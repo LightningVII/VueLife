@@ -1,13 +1,14 @@
 export default class Dep {
-    constructor(array) { // 构造函数
+    constructor(array) {
         this.subs = array || []
+        this.target = {}
     }
-    addSub(sub) { // 原型方法
+    addSub(sub) {
         this.subs.push(sub)
     }
-    notify(val) {
+    notify() {
         this.subs.forEach(sub => {
-            sub.update(val)
+            sub.update(this.target.val)
         })
     }
 }

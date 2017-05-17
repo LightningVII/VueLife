@@ -151,7 +151,10 @@ export default {
 		}
 	},
 	mounted() {
+		// 数组 修改
 		this.slides[0] = this.slides[3]
+
+		// 解决方案
 		// this.$set(this.$data.slides, 0, this.slides[3])
 		// this.slides.push(this.slides[3])
 	}
