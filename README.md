@@ -1,4 +1,4 @@
-# imooc-vue
+# vue
 
 > A Vue.js project
 
