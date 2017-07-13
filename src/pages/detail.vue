@@ -39,12 +39,17 @@ export default {
                 name: '广告发布',
                 path: 'publish',
                 active: false
-            }],
+            }, {
+				name: '预约业务',
+				path: 'subscribe',
+                active: false
+			}],
             imgMap: {
                 '/detail/count': require('../assets/images/1.png'),
                 '/detail/forecast': require('../assets/images/2.png'),
                 '/detail/analysis': require('../assets/images/3.png'),
-                '/detail/publish': require('../assets/images/4.png')
+                '/detail/publish': require('../assets/images/4.png'),
+				'/detail/subscribe': require('../assets/images/1.png')
             }
         }
     },

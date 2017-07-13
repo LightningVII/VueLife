@@ -109,21 +109,20 @@ export default {
 					list: [{
 						name: '数据统计',
 						url: 'http://starcraft.com'
-					},
-					{
+					}, {
 						name: '数据预测',
 						url: 'http://warcraft.com'
-					},
-					{
+					}, {
 						name: '流量分析',
 						url: 'http://overwatch.com',
 						hot: true
-					},
-					{
+					}, {
 						name: '广告发布',
 						url: 'http://hearstone.com'
-					}
-					]
+					}, {
+						name: '预约业务',
+						url: 'http://hearstone.com'
+					}]
 				},
 				app: {
 					title: '手机应用类',
@@ -131,32 +130,20 @@ export default {
 					list: [{
 						name: '91助手',
 						url: 'http://weixin.com'
-					},
-					{
+					}, {
 						name: '产品助手',
 						url: 'http://twitter.com',
 						hot: true
-					},
-					{
+					}, {
 						name: '智能地图',
 						url: 'http://maps.com'
-					},
-					{
+					}, {
 						name: '团队语音',
 						url: 'http://phone.com'
-					}
-					]
+					}]
 				}
 			}
 		}
-	},
-	mounted() {
-		// 数组 修改
-		this.slides[0] = this.slides[3]
-
-		// 解决方案
-		// this.$set(this.$data.slides, 0, this.slides[3])
-		// this.slides.push(this.slides[3])
 	}
 }
 </script>

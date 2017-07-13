@@ -12,6 +12,7 @@ import DetailAnaPage from './pages/detail/analysis'
 import DetailCouPage from './pages/detail/count'
 import DetailForPage from './pages/detail/forecast'
 import DetailPubPage from './pages/detail/publish'
+import DetailSubPage from './pages/detail/subscribe'
 Vue.use(VueRouter)
 Vue.use(VueAxios, axios)
 
@@ -39,6 +40,9 @@ let router = new VueRouter({
         }, {
             path: 'publish',
             component: DetailPubPage
+        }, {
+            path: 'subscribe',
+            component: DetailSubPage
         }]
     }]
 })
@@ -52,5 +56,5 @@ new Vue({
     }
 })
 
-import Demo from './demo'
-new Demo()
+// import Demo from './demo'
+// new Demo()
